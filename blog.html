@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVID — Blog</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/auth.css">
+    <link rel="stylesheet" href="./css/polish.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-inner school-theme" data-nav="blog">
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path>
+        </svg>
+    </div>
+    <header class="header">
+        <a href="index.html"><img class="header-logo" src="./img/logo.png" alt="AVID logo"></a>
+        <div class="toggle"></div>
+        <ol class="header-nav">
+            <li><a href="index.html" class="header-nav-item" data-nav="home">Bosh sahifa</a></li>
+            <li><a href="blog.html" class="header-nav-item active" data-nav="blog">Blog</a></li>
+            <li><a href="instructor.html" class="header-nav-item">O'qituvchi</a></li>
+            <li><a href="about.html" class="header-nav-item" data-nav="about">Biz haqimizda</a></li>
+            <li><a href="contact.html" class="header-nav-item">Aloqa</a></li>
+            <li><a href="login.html" class="header-nav-item nav-login">Kirish</a></li>
+            <li><a href="register.html" class="header-nav-item nav-login">Ro'yxatdan o'tish</a></li>
+        </ol>
+        <div class="header-login"></div>
+    </header>
+    <main>
+        <section class="blog">
+            <div class="page-intro">
+                <h1>Blog</h1>
+                <p class="blog-lead">Dasturlash maslahatlari, karera yo'li va texnologiya yangiliklari.</p>
+            </div>
+            <div class="blog-grid" id="blog-grid"></div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="site-footer-copy">&copy; <span id="year"></span> AVID · <a href="index.html">Bosh sahifa</a></div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="./js/api.js"></script>
+    <script src="./js/layout.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/blog.js"></script>
+</body>
+</html>

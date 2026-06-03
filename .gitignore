@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+backend/vendor/
+
+# Environment & secrets
+.env
+backend/.env
+
+# Database (local)
+backend/database/*.db
+backend/database/*.db-journal
+data/
+*.db-journal
+
+# Laravel runtime
+backend/storage/logs/
+backend/storage/framework/cache/
+backend/storage/framework/sessions/
+backend/storage/framework/views/
+backend/bootstrap/cache/*.php
+!backend/bootstrap/cache/.gitignore
+
+# Uploads (user content)
+uploads/*
+!uploads/.gitkeep
+
+# Dev artifacts
+composer.phar
+backend/tmp-*.txt
+backend/cookies*.txt
+*.log
+.DS_Store
+Thumbs.db

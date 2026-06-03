@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVID — Kirish</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/auth.css">
+    <link rel="stylesheet" href="./css/polish.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-inner auth-page school-theme" data-nav="login" data-auth-page="login">
+    <header class="header">
+        <a href="index.html"><img class="header-logo" src="./img/logo.png" alt="AVID"></a>
+        <div class="toggle"></div>
+        <ol class="header-nav">
+            <li><a href="index.html" class="header-nav-item">Bosh menyu</a></li>
+            <li><a href="blog.html" class="header-nav-item">Blog</a></li>
+            <li><a href="about.html" class="header-nav-item">Biz haqimizda</a></li>
+            <li><a href="contact.html" class="header-nav-item">Aloqa</a></li>
+        </ol>
+        <div class="header-login"></div>
+    </header>
+    <main>
+        <div class="auth-card">
+            <h1>Kirish</h1>
+            <form id="auth-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+                <label for="password">Parol</label>
+                <input type="password" id="password" name="password" required autocomplete="current-password">
+                <button type="submit">Kirish</button>
+            </form>
+            <p class="form-feedback" id="auth-feedback"></p>
+            <div class="auth-links">
+                <a href="forgot-password.html">Parolni unutdingizmi?</a><br>
+                <a href="register.html">Ro'yxatdan o'tish</a>
+            </div>
+            <p class="dev-hint"><strong>Demo:</strong> demo@avid.uz · parol Demo1234!</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-info">&copy; <span id="year"></span> | By <a href="https://github.com/ufxzche">Avid.uz</a></div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="./js/api.js"></script>
+    <script src="./js/layout.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/auth-pages.js"></script>
+</body>
+</html>

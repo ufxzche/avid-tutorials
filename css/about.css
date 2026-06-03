@@ -1,41 +1,63 @@
-/* * {
-    box-sizing: border-box;
-} */
-
 main .about {
-    margin: 0px auto;
-    height: 78vh;
-    width: 1000px;
-    padding-top: 120px;
-    margin-top: 5px;
-} 
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+    min-height: calc(100vh - 280px);
+}
 
+main .about .page-intro h1,
 main .about .title {
     text-align: center;
-    font-weight: bold;
-    font-size: 27px;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--primary);
+    padding-bottom: 10px;
+    border-bottom: 2px solid #192774;
+    margin: 0 auto 32px;
+    width: fit-content;
+    text-transform: none;
+}
+
+main .about .caption a {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+main .about .caption {
+    text-transform: none;
+    line-height: 1.75;
+    color: #333;
+    font-size: 16px;
+}
+
+main .about .caption p {
+    margin: 0 0 16px;
+    letter-spacing: 0.01em;
+}
+
+main .about .caption b {
     color: #192774;
-    width: 250px;
-    border-bottom: 1px solid #192774;
-    margin: 0px auto 25px;
-}
-
-main .about .caption p{
-    letter-spacing: 1px;
-    line-height: 20px;
-}
-
-main .about .caption p + p {
-    margin-top: 20px;
 }
 
 main .about .caption span {
     display: block;
-    margin-top: 5px;
-    margin-left: 0px;
+    margin-top: 10px;
+    padding-left: 4px;
 }
 
 main .about .caption span::before {
-    content: '●';
-    padding-right: 4px;
+    content: "●";
+    color: #192774;
+    padding-right: 8px;
+}
+
+@media (max-width: 600px) {
+    main .about {
+        padding: 32px 20px 60px;
+    }
+
+    main .about .title {
+        font-size: 22px;
+    }
 }

@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/**
+ * AVID — visual polish layer
+ * Brand: --primary #192774, --accent #8b0f58, --footer-bg #131b43
+ * Refines spacing, type, hover — no redesign.
+ */
+
+/* ——— 1. Homepage ——— */
+
+.home-hero {
+    background: linear-gradient(
+        145deg,
+        var(--footer-bg) 0%,
+        var(--primary) 52%,
+        #24318a 100%
+    );
+}
+
+.home-hero::after {
+    background: radial-gradient(circle at 75% 20%, rgba(139, 15, 88, 0.18), transparent 45%);
+}
+
+.home-hero .btn-hero-primary {
+    color: var(--primary);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-hero .btn-hero-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home-hero .btn-hero-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #fff;
+}
+
+.home-section h2 {
+    letter-spacing: -0.02em;
+}
+
+.home-section + .home-section {
+    padding-top: 40px;
+}
+
+.tech-chip {
+    border-color: var(--primary-border);
+}
+
+.tech-chip:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-hover);
+}
+
+.tech-chip span {
+    color: var(--primary);
+}
+
+.home-popular {
+    background: var(--bg-page);
+}
+
+.section-more {
+    color: var(--primary);
+}
+
+.section-more:hover {
+    color: var(--accent);
+}
+
+.home-blog-card {
+    border-color: var(--primary-border);
+}
+
+.home-blog-card h3 {
+    color: var(--primary);
+}
+
+.home-blog-card:hover {
+    border-color: rgba(25, 39, 116, 0.25);
+    transform: translateY(-2px);
+}
+
+/* ——— 2. Catalog ——— */
+
+#courses {
+    padding: 64px 0 56px;
+}
+
+.catalog-toolbar {
+    margin-bottom: 28px;
+    padding: 0 clamp(16px, 4vw, 40px);
+}
+
+.courses-loading,
+.courses-empty {
+    padding: 48px 24px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.courses-empty a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Tech icon cards on catalog */
+.courses-img--tech {
+    background: linear-gradient(160deg, var(--bg-page) 0%, var(--primary-soft) 100%);
+}
+
+/* ——— 3. Course page ——— */
+
+.course-detail-hero {
+    padding: 32px;
+    border: 1px solid var(--primary-border);
+}
+
+.course-detail-hero h1 {
+    font-size: clamp(24px, 3vw, 32px);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+.course-detail-hero p {
+    line-height: 1.65;
+    color: var(--text-muted);
+}
+
+.module-block {
+    background: var(--bg-card);
+    border: 1px solid var(--primary-border);
+    border-radius: var(--radius);
+    padding: 20px 22px;
+    box-shadow: var(--shadow);
+}
+
+.module-block h2 {
+    color: var(--primary);
+    font-size: 20px;
+    margin: 0 0 16px;
+}
+
+.module-block h4 {
+    font-size: 15px;
+    margin: 16px 0 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--primary-border);
+}
+
+.lesson-link {
+    padding: 10px 14px;
+    margin-bottom: 4px;
+    transition: background 0.15s ease, padding-left 0.15s ease;
+}
+
+.lesson-link:hover {
+    padding-left: 18px;
+}
+
+.lesson-link--locked {
+    padding: 10px 14px;
+    background: var(--bg-page);
+    border-radius: 6px;
+}
+
+.course-detail-thumb.courses-img--tech {
+    background: linear-gradient(160deg, var(--bg-page) 0%, var(--primary-soft) 100%);
+}
+
+/* ——— 4. Lesson ——— */
+
+.lesson-layout > div > p {
+    line-height: 1.65;
+    color: var(--text-muted);
+}
+
+.lesson-sidebar {
+    border: 1px solid var(--primary-border);
+    padding: 20px;
+}
+
+.lesson-sidebar .lesson-link {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.lesson-player-wrap {
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-hover);
+}
+
+.lesson-layout h3 {
+    color: var(--primary);
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.lesson-layout fieldset {
+    border: 1px solid var(--primary-border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    margin: 12px 0;
+    background: var(--bg-card);
+}
+
+.lesson-layout fieldset legend {
+    font-weight: 600;
+    color: var(--primary);
+    padding: 0 6px;
+}
+
+.lesson-layout textarea {
+    border: 1px solid #d0d4e4;
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lesson-layout textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(25, 39, 116, 0.12);
+}
+
+/* ——— 5. Instructor public ——— */
+
+.instructor-profile {
+    border-color: var(--primary-border);
+    box-shadow: var(--shadow);
+}
+
+.instructor-profile h1 {
+    color: var(--primary);
+}
+
+.instructor-role {
+    color: var(--accent);
+}
+
+.instructor-avatar--placeholder {
+    color: var(--primary);
+    background: linear-gradient(145deg, var(--primary-soft), var(--bg-page));
+    border: 2px solid var(--primary-border);
+}
+
+.instructor-page h2 {
+    color: var(--primary);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* ——— 6. Blog ——— */
+
+main .blog .page-intro h1,
+.page-intro h1 {
+    color: var(--primary);
+}
+
+main .blog .blog-lead {
+    color: var(--text-muted);
+}
+
+.blog-card {
+    border-color: var(--primary-border);
+    border-radius: var(--radius);
+}
+
+.blog-card:hover {
+    border-color: rgba(25, 39, 116, 0.22);
+}
+
+.blog-card-title {
+    color: var(--primary);
+}
+
+#blog-post .blog-post-title {
+    color: var(--primary);
+    font-size: clamp(26px, 4vw, 34px);
+    line-height: 1.25;
+}
+
+.blog-post-content {
+    font-size: 16px;
+}
+
+/* ——— 7. Profile & auth ——— */
+
+.auth-card {
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 36px 32px;
+}
+
+.auth-card h1 {
+    color: var(--primary);
+}
+
+.auth-card button[type="submit"]:hover {
+    background: #141f5c;
+}
+
+.auth-card input:hover,
+.auth-card textarea:hover {
+    border-color: #a8b4d4;
+}
+
+.dev-hint {
+    background: var(--primary-soft);
+    border: 1px solid var(--primary-border);
+    color: var(--text-muted);
+}
+
+.dev-hint strong {
+    color: var(--primary);
+}
+
+.profile-guest .btn-primary {
+    border-radius: var(--radius-pill);
+}
+
+/* ——— 8. Dashboards (student / instructor / admin) ——— */
+
+.dashboard-grid h1 {
+    font-size: clamp(26px, 3vw, 32px);
+    color: var(--primary);
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.dashboard-grid h2 {
+    font-size: 20px;
+    color: var(--primary);
+    margin: 32px 0 16px;
+}
+
+.dashboard-lead {
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.stat-card {
+    border: 1px solid var(--primary-border);
+    border-radius: var(--radius);
+    padding: 22px 18px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.stat-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+}
+
+.stat-card strong {
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+.admin-table {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.admin-table thead th {
+    background: var(--primary-soft);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 13px;
+    border-bottom: 2px solid var(--primary-border);
+}
+
+.admin-table tbody tr:hover {
+    background: rgba(25, 39, 116, 0.04);
+}
+
+.admin-table a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.admin-table a:hover {
+    color: var(--accent);
+}
+
+.admin-block-btn,
+.btn-secondary.admin-block-btn {
+    font-size: 12px;
+    padding: 8px 14px;
+}
+
+.admin-contact-list li {
+    border: 1px solid var(--primary-border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    line-height: 1.55;
+}
+
+/* ——— 9. Instructor cabinet forms ——— */
+
+.instructor-panel {
+    border: 1px solid var(--primary-border);
+}
+
+.instructor-panel input:focus,
+.instructor-panel textarea:focus,
+.instructor-panel select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(25, 39, 116, 0.1);
+}
+
+.instructor-toolbar {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--primary-border);
+    margin-bottom: 28px;
+}
+
+.form-feedback.success {
+    color: #1b5e20;
+}
+
+.form-feedback.error {
+    color: var(--accent);
+}
+
+/* ——— 10. Footer & stats ——— */
+
+.site-footer {
+    background: var(--footer-bg);
+}
+
+.site-footer-nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.site-footer-copy a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.site-footer-copy a:hover {
+    color: #fff;
+}
+
+.static--modern {
+    border-color: var(--primary-border);
+}
+
+.static--modern .static-item-count {
+    color: var(--primary);
+}
+
+.static--modern .static-item-title {
+    text-transform: none;
+}
+
+.static-item {
+    border: 1px solid var(--primary-border);
+    transition: box-shadow 0.2s ease;
+}
+
+.static-item:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+/* ——— 11. About & contact ——— */
+
+main .about .caption {
+    font-size: 16px;
+}
+
+main .about .caption a {
+    color: var(--primary);
+}
+
+.contact-info {
+    text-transform: none;
+    line-height: 1.6;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border-radius: var(--radius);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(25, 39, 116, 0.1);
+}
+
+/* ——— 12. Focus & accessibility ——— */
+
+a:focus-visible,
+button:focus-visible,
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.sign-in:focus-visible,
+.sign-up:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* ——— 13. Progress & empty video ——— */
+
+.progress-bar {
+    height: 10px;
+    background: #e8ebf4;
+}
+
+.progress-bar span {
+    background: linear-gradient(90deg, var(--primary), #2a3a9e);
+    border-radius: 4px;
+}
+
+.lesson-player-wrap p.courses-empty {
+    background: var(--footer-bg);
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+}

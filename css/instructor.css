@@ -1,0 +1,187 @@
+.instructor-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.instructor-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.instructor-toolbar a {
+  color: #192774;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.instructor-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .instructor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.instructor-panel {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(25, 39, 116, 0.08);
+}
+
+.instructor-panel h2,
+.instructor-panel h3 {
+  color: #192774;
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.instructor-panel label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 12px 0 4px;
+  color: #333;
+}
+
+.instructor-panel input,
+.instructor-panel textarea,
+.instructor-panel select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #c8cfe8;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.instructor-panel textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.instructor-panel .field-error {
+  color: #8b0f58;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.module-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.module-item {
+  border: 1px solid #e0e4ef;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.module-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #f5f6fb;
+  gap: 8px;
+}
+
+.module-head strong {
+  font-size: 14px;
+  color: #192774;
+}
+
+.lesson-list {
+  list-style: none;
+  padding: 8px;
+  margin: 0;
+}
+
+.lesson-list li button {
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.lesson-list li button:hover,
+.lesson-list li button.active {
+  background: rgba(25, 39, 116, 0.1);
+  color: #192774;
+}
+
+.lesson-badge {
+  font-size: 11px;
+  color: #666;
+  margin-left: 6px;
+}
+
+.btn-sm {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-sm.danger {
+  background: #8b0f58;
+  color: #fff;
+}
+
+.btn-sm.ghost {
+  background: transparent;
+  border: 1px solid #192774;
+  color: #192774;
+}
+
+.materials-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+
+.materials-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+}
+
+.quiz-editor {
+  border-top: 1px solid #e0e4ef;
+  margin-top: 20px;
+  padding-top: 16px;
+}
+
+.quiz-q-block {
+  background: #f9fafc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.form-feedback.success {
+  color: #0d6b3a;
+}
+
+.form-feedback.error {
+  color: #8b0f58;
+}

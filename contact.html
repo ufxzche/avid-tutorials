@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVID — Aloqa</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/polish.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-inner school-theme" data-nav="contact">
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path>
+        </svg>
+    </div>
+    <header class="header">
+        <a href="index.html"><img class="header-logo" src="./img/logo.png" alt="AVID logo"></a>
+        <div class="toggle"></div>
+        <ol class="header-nav">
+            <li><a href="index.html" class="header-nav-item">Bosh menyu</a></li>
+            <li><a href="blog.html" class="header-nav-item">Blog</a></li>
+            <li><a href="about.html" class="header-nav-item">Biz haqimizda</a></li>
+            <li><a href="contact.html" class="header-nav-item active">Aloqa</a></li>
+            <li><a href="login.html" class="header-nav-item nav-login">Kirish</a></li>
+            <li><a href="register.html" class="header-nav-item nav-login">Ro'yxatdan o'tish</a></li>
+        </ol>
+        <div class="header-login"></div>
+    </header>
+    <main>
+        <section class="contact">
+            <div class="page-intro">
+                <h1>Aloqa</h1>
+                <p>Kurslar, hamkorlik yoki texnik savollar — yozing, javob beramiz.</p>
+            </div>
+            <div class="contact-info">
+                <p>Formani to'ldiring yoki to'g'ridan-to'g'ri email yuboring.</p>
+                <p>Email: <a href="mailto:info@avid.uz">info@avid.uz</a></p>
+            </div>
+            <form class="contact-form" novalidate>
+                <div>
+                    <label for="name">Ismingiz</label>
+                    <input type="text" id="name" name="name" placeholder="Ismingiz" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                </div>
+                <div>
+                    <label for="message">Xabar</label>
+                    <textarea id="message" name="message" placeholder="Xabaringizni yozing..." required minlength="10"></textarea>
+                </div>
+                <p class="form-feedback" aria-live="polite"></p>
+                <button type="submit">Yuborish</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-info">&copy; <span id="year"></span> | By <a href="https://github.com/ufxzche">Avid.uz</a></div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="./js/api.js"></script>
+    <script src="./js/layout.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

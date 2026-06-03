@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVID — Profil</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/auth.css">
+    <link rel="stylesheet" href="./css/polish.css">
+</head>
+<body class="page-inner auth-page school-theme" data-nav="profile" data-auth-page="profile">
+    <header class="header">
+        <a href="index.html"><img class="header-logo" src="./img/logo.png" alt="AVID"></a>
+        <div class="toggle"></div>
+        <ol class="header-nav">
+            <li><a href="index.html" class="header-nav-item" data-nav="home">Bosh menyu</a></li>
+            <li><a href="blog.html" class="header-nav-item" data-nav="blog">Blog</a></li>
+            <li><a href="about.html" class="header-nav-item" data-nav="about">Biz haqimizda</a></li>
+            <li><a href="contact.html" class="header-nav-item" data-nav="contact">Aloqa</a></li>
+            <li><a href="login.html" class="header-nav-item nav-login">Kirish</a></li>
+            <li><a href="register.html" class="header-nav-item nav-login">Ro'yxatdan o'tish</a></li>
+        </ol>
+        <div class="header-login"></div>
+    </header>
+    <main>
+        <div class="auth-card" style="max-width:480px">
+            <h1>Profil</h1>
+            <div id="profile-guest" class="profile-guest" hidden>
+                <p>Siz tizimga kirmagansiz.</p>
+                <a href="login.html" class="btn-primary" style="display:inline-block;margin-top:16px;padding:12px 24px;text-decoration:none;color:#fff">Kirish</a>
+            </div>
+            <form id="profile-form" hidden>
+                <label for="name">Ism</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="profile-readonly" readonly>
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" rows="3" maxlength="500" placeholder="Qisqa tavsif"></textarea>
+                <label for="avatar">Avatar</label>
+                <input type="file" id="avatar" name="avatar" accept="image/jpeg,image/png,image/webp">
+                <p class="auth-links">Ro'yxatdan o'tgan: <span id="profile-created"></span></p>
+                <button type="submit">Saqlash</button>
+                <button type="button" id="btn-profile-logout" class="sign-in" style="margin-top:12px;width:100%">Chiqish</button>
+            </form>
+            <p class="form-feedback" id="auth-feedback"></p>
+        </div>
+    </main>
+    <script src="./js/api.js"></script>
+    <script src="./js/layout.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/auth-pages.js"></script>
+</body>
+</html>

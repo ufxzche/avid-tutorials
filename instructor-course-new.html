@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="uz">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AVID — Yangi kurs</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="./css/platform.css">
+
+    <link rel="stylesheet" href="./css/auth.css">
+    <link rel="stylesheet" href="./css/polish.css">
+</head>
+
+<body class="page-inner auth-page school-theme">
+
+    <header class="header">
+
+        <a href="index.html"><img class="header-logo" src="./img/logo.png" alt="AVID"></a>
+
+        <div class="toggle"></div>
+
+        <ol class="header-nav">
+
+            <li><a href="instructor-dashboard.html" class="header-nav-item">← Panel</a></li>
+
+        </ol>
+
+        <div class="header-login"></div>
+
+    </header>
+
+    <main>
+
+        <form id="new-course-form" class="auth-card" style="max-width:560px;margin:24px auto">
+
+            <h1>Yangi kurs</h1>
+
+            <label>Sarlavha</label>
+
+            <input name="title" required minlength="3" maxlength="120">
+
+            <label>Tavsif</label>
+
+            <textarea name="description" required minlength="20" maxlength="5000"></textarea>
+
+            <label>Texnologiya / yo'nalish</label>
+
+            <select name="lang" required>
+
+                <option value="python">Python</option>
+
+            </select>
+
+            <label>Daraja</label>
+
+            <select name="level">
+
+                <option value="beginner">Boshlang'ich</option>
+
+                <option value="intermediate">O'rta</option>
+
+                <option value="advanced">Ilg'or</option>
+
+            </select>
+
+            <button type="submit" class="btn-primary">Yaratish va boshqarish</button>
+
+            <p class="form-feedback" id="form-feedback"></p>
+
+        </form>
+
+    </main>
+
+    <script src="./js/api.js"></script>
+
+    <script src="./js/layout.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    <script src="./js/instructor-course-new.js"></script>
+
+</body>
+
+</html>
+

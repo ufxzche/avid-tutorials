@@ -1,0 +1,228 @@
+.auth-page main {
+    padding-top: calc(var(--header-h) + 24px);
+    min-height: calc(100vh - 180px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 48px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    margin: 24px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(25, 39, 116, 0.08);
+}
+
+.auth-card h1 {
+    text-align: center;
+    color: var(--primary);
+    font-size: 24px;
+    margin: 0 0 24px;
+    text-transform: none;
+}
+
+.auth-card label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #192774;
+    margin-bottom: 6px;
+    text-transform: none;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border: 1px solid #d0d4e4;
+    border-radius: 6px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.auth-card input:focus {
+    outline: none;
+    border-color: #192774;
+    box-shadow: 0 0 0 3px rgba(25, 39, 116, 0.12);
+}
+
+.auth-card button[type="submit"],
+.auth-card .btn-primary {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 35px;
+    background: #192774;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: none;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.auth-card button[type="submit"]:hover {
+    background: #141f5c;
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    text-transform: none;
+}
+
+.auth-links a {
+    color: #192774;
+}
+
+.courses-loading,
+.courses-empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    text-transform: none;
+    grid-column: 1 / -1;
+}
+
+.course-search-wrap {
+    max-width: 400px;
+    margin: 0 auto 32px;
+    text-transform: none;
+}
+
+.course-search-wrap input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d0d4e4;
+    border-radius: 35px;
+    font-size: 15px;
+}
+
+.course-search-wrap input:focus {
+    outline: none;
+    border-color: #192774;
+}
+
+#course-detail,
+#blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: calc(var(--header-h) + 32px) 24px 64px;
+    text-transform: none;
+}
+
+.course-hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.course-hero-icon {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+}
+
+.course-hero h1 {
+    color: #192774;
+    margin: 16px 0 8px;
+}
+
+.course-hero-desc {
+    color: #444;
+    line-height: 1.6;
+}
+
+.lesson-list h2 {
+    color: #192774;
+    margin-bottom: 20px;
+}
+
+.lesson-item {
+    background: #fff;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.lesson-item h3 {
+    color: #192774;
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.lesson-content {
+    color: #333;
+    line-height: 1.65;
+}
+
+.blog-post-img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.blog-post-title {
+    color: #192774;
+    margin: 16px 0;
+}
+
+.blog-post-content {
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.blog-post-content p {
+    margin-bottom: 12px;
+}
+
+.header-login .sign-in#btn-logout {
+    border: 1px solid #192774;
+    background: #fff;
+    color: #192774;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.profile-guest {
+    text-align: center;
+    text-transform: none;
+}
+
+.profile-readonly {
+    background: #f0f2f8;
+    color: #666;
+}
+
+.form-feedback {
+    margin-top: 12px;
+    font-size: 14px;
+    text-transform: none;
+}
+
+.form-feedback.error {
+    color: #c62828;
+}
+
+.form-feedback.success {
+    color: #2e7d32;
+}
+
+.auth-card textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border: 1px solid #d0d4e4;
+    border-radius: 6px;
+    font-size: 15px;
+    text-transform: none;
+    resize: vertical;
+}
