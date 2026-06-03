@@ -1,5 +1,5 @@
 {
-  "name": "avid-online-darslar",
+  "name": "avid-tutorials",
   "version": "2.0.0",
   "description": "AVID onlayn darslar platformasi (Laravel backend)",
   "private": true,

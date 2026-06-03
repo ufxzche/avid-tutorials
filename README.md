@@ -2,6 +2,8 @@
 
 Video kurslar, testlar, progress va blog — **itProger** uslubidagi oddiy o‘quv sayti (Laravel + statik frontend).
 
+GitHub: https://github.com/ufxzche/avid-tutorials
+
 ## Rollar
 
 | Rol | Login | Parol |
